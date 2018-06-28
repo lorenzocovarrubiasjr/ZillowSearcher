@@ -5,6 +5,15 @@ require "ZillowSearcher/version"
 # --Need a class for Homes for rent that will store all the info on homes for rent -address, price, details
 # -- Need a class for Agents that will store their info - name, rating, phone number
 
-module ZillowSearcher
+class ZillowSearcher
   # Your code goes here...
+  def initialize
+      puts "Welcome to ZillowSearcher!!"
+      puts "Would you like to:
+            1) Search for Homes for sale
+            2) Search for Homes for Rent
+            3) Search for a local Agent"
+
+
+  end
 end
