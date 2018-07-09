@@ -14,11 +14,11 @@ class ZillowSearchStart
             1) Search for Homes for sale
             2) Search for Homes for Rent
             3) Search for a local Agent"
-      
+
       choice = gets.chomp
-      
-      if choice == "1" || "2" || "3" 
-          n = ZillowScraper(choice).new
+
+      if choice == "1" or choice == "2" or choice == "3"
+          n = ZillowScraper.new(choice)
       else
           ZillowSearchStart.new
       end
